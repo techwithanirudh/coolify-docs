@@ -6,6 +6,7 @@ export default defineConfig({
   description: "Coolify Documentation",
   lastUpdated: true,
   lang: "en-US",
+  base: '/docs/',
   cleanUrls: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
