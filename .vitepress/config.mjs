@@ -27,19 +27,35 @@ export default defineConfig({
         collapsed: false,
         items: [
           { text: 'What is Coolify?', link: '/' },
+          { text: 'Contact', link: '/contact' },
+        ]
+      },
+      {
+        text: 'Get Started',
+        collapsed: false,
+        items: [
           { text: 'Installation', link: '/installation' },
           {
             text: "Building Blocks",
             link: "/building-blocks",
           },
           {
-            text: "Configurations",
-            link: "/configurations",
+            text: "No Vendor Lock-in",
+            link: "/no-vendor-lock-in",
           },
           {
             text: "Firewall",
             link: "/firewall",
           },
+        ]
+      },
+      {
+        text: 'Deep Dive',
+        collapsed: false,
+        items: [
+          { text: 'Servers', link: '/servers' },
+          { text: 'Proxy', link: '/proxy' },
+         
         ]
       }
     ],
