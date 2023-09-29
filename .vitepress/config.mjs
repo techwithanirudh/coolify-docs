@@ -6,6 +6,7 @@ const config = {
   lang: "en-US",
   base: "/docs/",
   cleanUrls: true,
+  head: [],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: "/coolify-transparent.png",
@@ -64,8 +65,8 @@ const config = {
       { icon: "mastodon", link: "https://fosstodon.org/@andrasbacsai" },
     ],
   },
-}
-if (!process?.env?.NODE_ENV || process.env.NODE_ENV !== "development") { 
+};
+if (process.env.NODE_ENV !== "development") {
   config.head.push([
     "script",
     {
