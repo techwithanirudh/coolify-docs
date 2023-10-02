@@ -46,6 +46,10 @@ const config = {
             text: "Firewall",
             link: "/firewall",
           },
+          {
+            text: "Password Reset",
+            link: "/password-reset",
+          },
         ],
       },
       {
