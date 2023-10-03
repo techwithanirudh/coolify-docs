@@ -58,6 +58,7 @@ const config = {
         items: [
           { text: "Servers", link: "/servers" },
           { text: "Proxy", link: "/proxy" },
+          { text: "Commands", link: "/commands" },
         ],
       },
     ],
@@ -74,9 +75,9 @@ if (process.env.NODE_ENV !== "development") {
   config.head.push([
     "script",
     {
-      async: "",
-      src: "https://umami.coollabs.io/script.js",
-      "data-website-id": "6c35d8be-3230-4d81-ba73-77322af9ddf8",
+      defer: "",
+      src: "https://analytics.coollabs.io/js/plausible.js",
+      "data-domain": "coolify.io/docs",
     },
   ]);
 }
