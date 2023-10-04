@@ -59,6 +59,7 @@ const config = {
           { text: "Servers", link: "/servers" },
           { text: "Proxy", link: "/proxy" },
           { text: "Commands", link: "/commands" },
+          { text: "Service Templates", link: "/service-templates" },
         ],
       },
     ],

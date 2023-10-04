@@ -53,10 +53,13 @@ You can set a threshold in % for your / filesystem. If this percentage is reache
 - Stopped Docker Containers deployed by Coolify (`docker container prune -f --filter "label=coolify.managed=true"`)
 
 ### Wildcard Domain
-You can set a wildcard domain (`example: http://127.0.0.1.sslip.io`) to your server, so you can easily assign generated domains to all the resources connected to this server.
+You can set a wildcard domain (`example: http://example.com`) to your server, so you can easily assign generated domains to all the resources connected to this server.
 
-If you set the example, you will get the following for an application that has a generated UUID of vgsco4o: `http://vgsco4o.127.0.0.1.sslip.io`
+Example: Your application UUID is `vgsco4o`.
 
-:::tip
-If you want to test out your application on a test domain, you can use [sslip.io](https://sslip.io).
-:::
+If you have the example set, you will get the following FQDN: `http://vgsco4o.example.com`
+
+If you do not have any wildcard domain set, Coolify will generate a [sslip.io](https://sslip.io) domain, which is free & magical domain that you can use anywhere. 
+
+In this case, it will be: `http://vgsco4o.127.0.0.1.sslip.io`, where `127.0.0.1` is your server's IP.
+
