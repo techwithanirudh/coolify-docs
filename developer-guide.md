@@ -32,7 +32,7 @@ head:
       content: Coolify
   - - meta
     - property: og:description
-      content:Self-hosting with superpowers.
+      content: Self-hosting with superpowers.
   - - meta
     - property: og:site_name
       content: Coolify
