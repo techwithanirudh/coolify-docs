@@ -56,7 +56,7 @@ An application could be a web application, a static website, a backend API, etc.
 ### Types
 1. Public Git Repositories
 2. Private Git Repositories (through GitHub App)
-3. Private Git Repositories (through [Deploy Key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/managing-deploy-keys) )
+3. Private Git Repositories (through [Deploy Key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/managing-deploy-keys))
 4. Simple Dockerfile
 5. ANY Docker Compose files
 

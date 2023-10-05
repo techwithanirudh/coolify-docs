@@ -34,7 +34,7 @@ You can connect any type of servers to Coolify. It could be a VPS, a Raspberry P
 
 The only manual step you need to do is to place your SSH key on the server, into `root` user's `~/.ssh/authorized_keys` file.
 
-##### Cloudflare Tunnels
+### Cloudflare Tunnels
 You can also set to use Cloudflare Tunnels for your servers.
 
 :::info

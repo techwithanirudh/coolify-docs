@@ -9,7 +9,9 @@ const config = {
   head: [],
   themeConfig: {
     outline: "deep",
-    // https://vitepress.dev/reference/default-theme-config
+    search: {
+      provider: 'local'
+    },
     logo: "/coolify-transparent.png",
     nav: [
       {
