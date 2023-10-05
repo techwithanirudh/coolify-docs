@@ -15,4 +15,4 @@ Traefik only starts when you did not select any proxy for your server and you ha
 :::
 
 ## Add Custom Configuration
-You can always add your own configuration to the proxy settings from Coolify's UI (`/server/<server_uuid>/proxy`) or by adding it to a [specific directory](./no-vendor-lock-in.md#persistent-directories) on your server.
+You can always add your own configuration to the proxy settings from Coolify's UI (`/server/<server_uuid>/proxy`) or by adding it to a [specific directory](/no-vendor-lock-in.md#persistent-directories) on your server.

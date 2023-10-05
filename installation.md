@@ -20,6 +20,10 @@ The script will do the followings on your operating system:
 
 `AMD64` and `ARM` architecture are supported.
 
+:::tip
+We recommend [Hetzner](https://hetzner.cloud/?ref=VBVO47VycYLt) **(referral link!)**. They have very cheap but super powerful servers, in EU and US.
+:::
+
 ## Supported Operating Systems
 
 `Debian` based servers are supported, due to the installation script (Coolify

@@ -16,6 +16,10 @@ You can use our [Cloud](https://app.coolify.io) version, so you only need a serv
 ## Remote Server
 You can connect any type of servers to Coolify. It could be a VPS, a Raspberry PI or a laptop running Linux.
 
+:::tip
+We recommend [Hetzner](https://hetzner.cloud/?ref=VBVO47VycYLt) **(referral link!)**. They have very cheap but super powerful servers, in EU and US.
+:::
+
 ### Requirements
 
 1. Connectivity

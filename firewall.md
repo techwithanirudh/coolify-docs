@@ -12,5 +12,5 @@ If you are using `Oracle Cloud free ARM server`, you need to allow these ports i
 - For GitHub integration, [check this](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-githubs-ip-addresses).
 
 ## Coolify Cloud
-If you need the public facing IPs to allow inbound connections to your servers, please [contact us](./contact.md).
+If you need the public facing IPs to allow inbound connections to your servers, please [contact us](/contact.md).
 

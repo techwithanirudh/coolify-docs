@@ -26,7 +26,6 @@ const config = {
     sidebar: [
       {
         text: "Introduction",
-        collapsed: false,
         items: [
           { text: "What is Coolify?", link: "/" },
           { text: "Contact", link: "/contact" },
@@ -34,7 +33,6 @@ const config = {
       },
       {
         text: "Get Started",
-        collapsed: false,
         items: [
           { text: "Installation", link: "/installation" },
           {
@@ -57,12 +55,15 @@ const config = {
       },
       {
         text: "Deep Dive",
-        collapsed: false,
         items: [
           { text: "Servers", link: "/servers" },
           { text: "Proxy", link: "/proxy" },
+          { text: "Applications", link: "/applications" },
           { text: "Commands", link: "/commands" },
           { text: "Service Templates", link: "/service-templates" },
+          { text: "Domains", link: "/domains" },
+          { text: "Environment Variables", link: "/environment-variables" },
+          { text: "Persistent Storage", link: "/persistent-storage" },
         ],
       },
     ],
