@@ -8,6 +8,7 @@ const config = {
   cleanUrls: true,
   head: [],
   themeConfig: {
+    outline: "deep",
     // https://vitepress.dev/reference/default-theme-config
     logo: "/coolify-transparent.png",
     nav: [
