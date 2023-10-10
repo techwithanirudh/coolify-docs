@@ -53,19 +53,19 @@ const config = {
       {
         text: "Deep Dive",
         items: [
-          {
-            text: "Firewall",
-            link: "/firewall",
-          },
+        
           { text: "Servers", link: "/servers" },
-          { text: "Proxy", link: "/proxy" },
           { text: "Applications", link: "/applications" },
           { text: "Commands", link: "/commands" },
-          { text: "Service Templates", link: "/service-templates" },
           { text: "Domains", link: "/domains" },
           { text: "Environment Variables", link: "/environment-variables" },
           { text: "Persistent Storage", link: "/persistent-storage" },
           { text: "Backups", link: "/backups" },
+          {
+            text: "Firewall",
+            link: "/firewall",
+          },
+          { text: "Service Templates", link: "/service-templates" },
         ],
       },
     ],

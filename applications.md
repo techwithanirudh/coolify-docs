@@ -41,7 +41,27 @@ head:
       content: https://cdn.coollabs.io/assets/coolify/og-image-docs.png
 ---
 # Applications
+Application could be any type of web application. It could be a static site, a NodeJS application, a PHP application, etc.
 
+For complex applications, you can use Docker Compose based deployments or the one-click services.
+
+## Types
+There are several types of application deployments available.
+- Public Git Repository
+- Private Git Repository ([GitHub App](https://docs.github.com/en/apps/using-github-apps/about-using-github-apps))
+- Private Git Repository ([Deploy Key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/managing-deploy-keys))
+- Based on a Dockerfile
+- Based on a Docker Compose
+- Based on a Docker Image
+
+
+## Build Packs
+These are the supported build packs:
+- Nixpacks
+- Dockerfile
+- Docker Image
+
+### Nixpacks
 Coolify uses [Nixpacks](https://nixpacks.com) as build pack by default. Nixpacks detect what kind of application are you trying to deploy and builds it accordingly.
 
 But if needed, you can customize it by adding a `nixpacks.toml` file to your repository or setting the right environment variables.
@@ -51,6 +71,14 @@ For example, if you are using a NodeJS application, you can set the `NIXPACKS_NO
 :::tip
 Worth reading their [documentation](https://nixpacks.com/docs) to understand how it works.
 :::
+### Dockerfile
+Dockerfile based build packs are useful if you have a custom dockerfile inside your Git repository.
+
+#### Custom Dockerfile Location
+You can always set your custom dockerfile location. By default, it is set to `/Dockerfile`.
+
+### Docker Image
+You can deploy any docker images from any Docker compatible repository. For example, you can deploy images from Docker Hub, GitHub Container Registry, etc.
 
 ## General
 

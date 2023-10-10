@@ -108,4 +108,21 @@ If you have the example set, you will get the following FQDN: `http://vgsco4o.ex
 If you do not have any wildcard domain set, Coolify will generate a [sslip.io](https://sslip.io) domain, which is free & magical domain that you can use anywhere. 
 
 In this case, it will be: `http://vgsco4o.127.0.0.1.sslip.io`, where `127.0.0.1` is your server's IP.
+## Proxy
+### Types
+- **Traefik**: Automatically configure Traefik(v2) based on your deployed resources.
+- **Custom/None**: You will configure a proxy manually (only for advanced users).
 
+:::info
+Soon we will support Nginx & Caddy with fully automated configuration.
+:::
+
+#### Traefik
+Coolify uses Traefik proxy by default to create a reverse proxy for your resources.
+
+:::tip
+Traefik only starts when you did not select any proxy for your server and you have a domain configured for a resource or your Coolify instance itself. 
+:::
+
+#### Add Custom Configuration
+You can always add your own configuration to the proxy settings from Coolify's UI (`/server/<server_uuid>/proxy`) or by adding it to a [specific directory](/no-vendor-lock-in.md#persistent-directories) on your server.

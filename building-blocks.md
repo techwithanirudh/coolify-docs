@@ -65,7 +65,7 @@ Like if you add a domain to your application, Coolify detects it and starts a pr
 Free SSL certificates included, thanks to Let's Encrypt.
 :::
 
-[More details.](/proxy.md)
+[More details.](/servers.md#proxy)
 
 ## Project
 
@@ -76,18 +76,11 @@ Resources are grouped together into a project, a tree structure. A project could
 Each project, by default have a `production` environment, that is not deletable, but renameable.
 Environments consists of resources, like [application](#application), [database](#database) or a [service](#service), etc.
 
-## [Application](/applications.md)
+## Application
 
 An application could be a web application, a static website, a backend API, etc. It is a container that runs a process deployed to a defined [server](#server).
 
-### Types
-
-1. Public Git Repositories
-2. Private Git Repositories (through [GitHub App](https://docs.github.com/en/apps/using-github-apps/about-using-github-apps))
-3. Private Git Repositories (through [Deploy Key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/managing-deploy-keys))
-4. Simple Dockerfile
-5. Any Docker Compose files
-
+[More details.](/applications)
 :::tip
 To have full integration with GitHub, like fully automated commit or pull request based deployments, you need a GitHub App (created automatically by Coolify).
 :::
@@ -96,27 +89,11 @@ To have full integration with GitHub, like fully automated commit or pull reques
 
 All supported databases could have scheduled, automatic backups, that is saved to your server or to an S3 compatible storage.
 
-### Types
-
-- PostgreSQL
-  :::info
-  MySQL, MariaDB, MongoDB, etc, coming soon...
-  :::
-
 ## Service
 
 A service is a more complex type of resource, that consists of several other resources, like an [application](#application) and a [database](#database), etc.
 
-Imagine you would like to deploy a Wordpress application, you would need a database, a web server and a PHP runtime. You could create a service that consists of these resources, grouped together and created automatically for you. Each resource in a service could be deployed to a different server.
-
-Current list:
-
-- Appsmith
-- Appwrite
-- Fider
-- Ghost
-- Umami
-- Uptime Kuma
+Imagine you would like to deploy a Wordpress application, you would need a database, a web server and a PHP runtime. You could create a service that consists of these resources, grouped together and created automatically for you.
 
 ## Destination
 
@@ -147,8 +124,3 @@ All you need to do is to setup your preferred notification system. Currently ava
 - Email
 - Discord Webhooks
 - Telegram Bot
-
-WIP:
-
-- Webhooks
-- Slack
