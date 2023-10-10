@@ -64,6 +64,7 @@ const config = {
           { text: "Domains", link: "/domains" },
           { text: "Environment Variables", link: "/environment-variables" },
           { text: "Persistent Storage", link: "/persistent-storage" },
+          { text: "Backups", link: "/backups" },
         ],
       },
     ],
