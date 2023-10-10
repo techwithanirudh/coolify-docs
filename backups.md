@@ -98,3 +98,7 @@ Other's could work, but not tested yet.
 Coolify uses MinIO's client, called [`mc`](https://min.io/docs/minio/linux/reference/minio-mc.html), to copy the backup files to your S3 compatible storage.
 
 
+### Verification
+To be able to use your S3 compatible storage, you need to verify it first. Verification done with `ListObjectsV2` request to your specified bucket.
+
+So you need to create a bucket first, and then you can verify it.
