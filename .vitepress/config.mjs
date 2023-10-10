@@ -63,6 +63,10 @@ const config = {
           { text: "Persistent Storage", link: "/persistent-storage" },
           { text: "Backups", link: "/backups" },
           {
+            text: "Notifications",
+            link: "/notifications",
+          },
+          {
             text: "Firewall",
             link: "/firewall",
           },
