@@ -72,7 +72,7 @@ If you leave it empty, Nixpacks will detect which commands to run. For example, 
 
 ### Base Directory
 
-> Currently turned off
+It is useful for monorepos. You can set the base directory for all the commands that will be executed by Coolify.
 
 ### Public Directory
 

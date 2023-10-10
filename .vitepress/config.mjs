@@ -10,7 +10,7 @@ const config = {
   themeConfig: {
     outline: "deep",
     search: {
-      provider: 'local'
+      provider: "local",
     },
     logo: "/coolify-transparent.png",
     nav: [
@@ -43,10 +43,7 @@ const config = {
             text: "No Vendor Lock-in",
             link: "/no-vendor-lock-in",
           },
-          {
-            text: "Firewall",
-            link: "/firewall",
-          },
+
           {
             text: "Password Reset",
             link: "/password-reset",
@@ -56,6 +53,10 @@ const config = {
       {
         text: "Deep Dive",
         items: [
+          {
+            text: "Firewall",
+            link: "/firewall",
+          },
           { text: "Servers", link: "/servers" },
           { text: "Proxy", link: "/proxy" },
           { text: "Applications", link: "/applications" },
