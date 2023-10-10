@@ -56,7 +56,8 @@ const config = {
         
           { text: "Servers", link: "/servers" },
           { text: "Applications", link: "/applications" },
-          { text: "Commands", link: "/commands" },
+          { text: "Databases", link: "/databases" },
+          { text: "Services", link: "/services" },
           { text: "Domains", link: "/domains" },
           { text: "Environment Variables", link: "/environment-variables" },
           { text: "Persistent Storage", link: "/persistent-storage" },
@@ -66,6 +67,7 @@ const config = {
             link: "/firewall",
           },
           { text: "Service Templates", link: "/service-templates" },
+          { text: "Helper Commands", link: "/commands" },
         ],
       },
     ],
