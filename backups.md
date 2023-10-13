@@ -61,7 +61,7 @@ const VALID_CRON_STRINGS = [
 ```
 
 ## PostgreSQL
-Coolify creates a full backup of your PostgreSQL database. 
+Coolify creates a full backup of your PostgreSQL databases. You can specify which database to backup, with a comma separated list.
 
 :::tip
 Coolify own database is also backed up using this method.
@@ -71,15 +71,15 @@ Coolify own database is also backed up using this method.
 Coolify uses the following command:
 
 ```bash
-pg_dump -Fc -U <username> > /data/coolify/backups/databases/<teamName-teamId>/<databaseUuid>/pg-backup-customformat-<timestamp>.backup
-# Example: /data/coolify/backups/databases/root-team-0/z84wg0w/pg-backup-customformat-1696936552.backup
+pg_dump --format=custom --no-acl --no-owner --username <username> <databaseName> > /data/coolify/backups/databases/<teamName-teamId>/<databaseUuid>/pg-dump-<databaseName>-<timestamp>.dmp
+# Example: /data/coolify/backups/databases/root-team-0/mcgkc4o/pg-dump-postgres-1697207547.dmp
 ```
 ### Restore
 
 As you can see, it a custom format backup, so you can restore it using the following command (or any equivalent tool):
 
 ```bash
-pg_restore --verbose --clean -h localhost -U postgres -d postgres pg-backup-customformat-1696935887.backup
+pg_restore --verbose --clean -h localhost -U postgres -d postgres pg-dump-postgres-1697207547.dmp
 ```
 
 ## S3 Backups
