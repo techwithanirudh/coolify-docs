@@ -58,6 +58,7 @@ const config = {
           { text: "Applications", link: "/applications" },
           { text: "Databases", link: "/databases" },
           { text: "Services", link: "/services" },
+          { text: "Docker Credentials", link: "/docker-credentials" },
           { text: "Domains", link: "/domains" },
           { text: "Environment Variables", link: "/environment-variables" },
           { text: "Persistent Storage", link: "/persistent-storage" },
