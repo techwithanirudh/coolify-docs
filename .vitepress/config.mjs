@@ -53,11 +53,13 @@ const config = {
       {
         text: "Deep Dive",
         items: [
-        
           { text: "Servers", link: "/servers" },
           { text: "Applications", link: "/applications" },
           { text: "Databases", link: "/databases" },
-          { text: "Services", link: "/services" },
+          {
+            text: "Services",
+            items: [{ text: "How To Add A Service", link: "/how-to-add-a-service" }],
+          },
           { text: "Docker Credentials", link: "/docker-credentials" },
           { text: "Domains", link: "/domains" },
           { text: "Environment Variables", link: "/environment-variables" },
@@ -71,7 +73,6 @@ const config = {
             text: "Firewall",
             link: "/firewall",
           },
-          { text: "Service Templates", link: "/service-templates" },
           { text: "Helper Commands", link: "/commands" },
         ],
       },

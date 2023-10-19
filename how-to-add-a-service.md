@@ -189,26 +189,16 @@ services:
         # J0QT0Cqr2ArmIT4RgTwK5F5lcXShgnJ53XTiHjqBbPntWVVG8DRHKnrsIjXBZJ8e 
         - APPWRITE_PASSWORD=$SERVICE_PASSWORD_64_APPWRITE
 ```
+## Add a new service
+Official templates stored [here](https://github.com/coollabsio/coolify/blob/main/templates/compose). They are just normal docker-compose files with a bit of magic.
 
-## How to test templates
+To add a new service, your can easily test your templates with `Docker Compose` deployments inside Coolify. It uses the same process to parse, generate and deploy as the one-click services.
 
-You can easily test your templates with `Docker Compose` deployments inside Coolify. It uses the same process to parse, generate and deploy as the one-click services.
 
-## How to add to the official templates
+If you are done with tests and everything works, open a [PR](https://github.com/coollabsio/coolify/compare), that have the new `<service>.yaml` compose file under `/templates/compose`.
 
-Official templates stored [here](https://github.com/coollabsio/coolify/blob/main/templates/service-templates.json) at the moment (could be change in the future) with the following format:
 
-```json
-{
-  "umami": {
-      // Documentation link, otherwise it will go to https://coolify.io/docs .
-      "documentation": "https://umami.is/docs/getting-started",
-      // A slogan to show on the dashboard.
-      "slogan": "Umami makes it easy to collect, analyze, and understand your web data — while maintaining visitor privacy and data ownership.",
-      // The actual compose file, encoded in base64 to save parsing/escaping issues.
-      "compose": "c2VydmljZXM6IAogIHVtYW1pOgogICAgaW1hZ2U6IGdoY3IuaW8vdW1hbWktc29mdHdhcmUvdW1hbWk6cG9zdGdyZXNxbC1sYXRlc3QKICAgIGVudmlyb25tZW50OgogICAgICAtIFNFUlZJQ0VfRlFETl9VTUFNSQogICAgICAtIERBVEFCQVNFX1VSTD1wb3N0Z3JlczovLyRTRVJWSUNFX1VTRVJfUE9TVEdSRVM6JFNFUlZJQ0VfUEFTU1dPUkRfUE9TVEdSRVNAcG9zdGdyZXNxbDo1NDMyLyRQT1NUR1JFU19EQgogICAgICAtIERBVEFCQVNFX1RZUEU9cG9zdGdyZXMKICAgICAgLSBBUFBfU0VDUkVUPSRTRVJWSUNFX1BBU1NXT1JEXzY0X1VNQU1JCiAgICBkZXBlbmRzX29uOgogICAgICBwb3N0Z3Jlc3FsOgogICAgICAgIGNvbmRpdGlvbjogc2VydmljZV9oZWFsdGh5CiAgcG9zdGdyZXNxbDoKICAgIGltYWdlOiBwb3N0Z3JlczoxNS1hbHBpbmUKICAgIHZvbHVtZXM6CiAgICAgIC0gcG9zdGdyZXNxbC1kYXRhOi92YXIvbGliL3Bvc3RncmVzcWwvZGF0YQogICAgZW52aXJvbm1lbnQ6CiAgICAgIC0gUE9TVEdSRVNfVVNFUj0kU0VSVklDRV9VU0VSX1BPU1RHUkVTCiAgICAgIC0gUE9TVEdSRVNfUEFTU1dPUkQ9JFNFUlZJQ0VfUEFTU1dPUkRfUE9TVEdSRVMKICAgICAgLSBQT1NUR1JFU19EQj0ke1BPU1RHUkVTX0RCOi11bWFtaX0KICAgIGhlYWx0aGNoZWNrOgogICAgICB0ZXN0OiBbIkNNRC1TSEVMTCIsICJwZ19pc3JlYWR5IC1VICQke1BPU1RHUkVTX1VTRVJ9IC1kICQke1BPU1RHUkVTX0RCfSJdCiAgICAgIGludGVydmFsOiA1cwogICAgICB0aW1lb3V0OiA1cwogICAgICByZXRyaWVzOiAxMA=="
-    }
-}
-```
+::: tip
+Coolify will use a [parsed version](https://github.com/coollabsio/coolify/blob/main/templates/service-templates.json).
+:::
 
-So if you are tested everyting and it works, open a [PR](https://github.com/coollabsio/coolify/compare) and that's all.
