@@ -58,7 +58,9 @@ const config = {
           { text: "Databases", link: "/databases" },
           {
             text: "Services",
-            items: [{ text: "How To Add A Service", link: "/how-to-add-a-service" }],
+            items: [
+              { text: "How To Add A Service", link: "/how-to-add-a-service" },
+            ],
           },
           { text: "Docker Credentials", link: "/docker-credentials" },
           { text: "Domains", link: "/domains" },
@@ -74,6 +76,19 @@ const config = {
             link: "/firewall",
           },
           { text: "Helper Commands", link: "/commands" },
+        ],
+      },
+      {
+        text: "API",
+        items: [
+          {
+            text: "Authentication",
+            link: "/api-authentication",
+          },
+          {
+            text: "Endpoints",
+            link: "/api-endpoints",
+          },
         ],
       },
     ],
