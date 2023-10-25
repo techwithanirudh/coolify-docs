@@ -74,7 +74,8 @@ One-click services are a collection of services that can be deployed with a sing
   <div v-for="(item,key) in services" class="grid grid-cols-2 my-4 rounded p-2">
   <div >
    <div class="text-xl font-bold" >{{ capitalizeFirstLetter(key) }}</div>
-   <a class="text-xs" :href="item.documentation">{{ item.documentation }}</a>
+   <a class="text-xs" :href="item.documentation">
+     Docs</a>
    </div>
    <div class="text-xs w-full">{{ item.slogan }}</div>
   </div>
