@@ -52,14 +52,15 @@ As API is still under heavy development, endpoints could change without notice. 
 ## Deploy Webhook
 
 GET `<instanceUrl>/api/v1/deploy?uuid=<resourceUuid>&force=false`
-GET `https://app.coolify.io/api/v1/deploy?uuid=hg04w48`
+
+Example: `https://app.coolify.io/api/v1/deploy?uuid=hg04w48`
 
 
 ```bash
 curl -H "Authorization: Bearer 4|bBx6dwcuY4IL05SxDvUjfFs547vOgZOJTx3Fp95rd76ff2dc" https://app.coolify.io/api/v1/deploy?uuid=hg04w48
 ```
 
-### Options
-`uuid`: Could be found in the URL of the resource page.
-`force`: If set to `true`, the deployment won't use cache. Default is `false`.
+### Query Parameters
+- `uuid`: Could be found in the URL of the resource page.
+- `force`: If set to `true`, the deployment won't use cache. Default is `false`.
 
