@@ -47,18 +47,36 @@ Here is the currently supported list of services:
 
 <script setup>
   import { onMounted, ref } from 'vue'
+  let loading = ref(true);
   let services = ref([]); 
-  console.log(services)
+  let failedToLoad = ref(false);
   onMounted(async () => {
-    const res = await fetch('https://cdn.coollabs.io/coolify/service-templates.json')
+    let res = null
+    try {
+      res = await fetch('https://cdn.coollabs.io/coolify/service-templates.jsons')
+    } catch(error) {}
+    try {
+      res = await fetch('https://raw.githubusercontent.com/coollabsio/coolify/main/templates/service-templates.jsons')
+    } catch(error) {}
+    if (res.ok === false) {
+      failedToLoad.value = true
+      loading.value = false
+      return
+    }
     const data = await res.json()
     services.value = Object.keys(data)
+    loading.value = false
   })
   function capitalizeFirstLetter(string) {
    return string.charAt(0).toUpperCase() + string.slice(1);
   }
 </script>
-<div v-if="services.length === 0">Loading services...</div>
+<div v-if="loading">Loading services...</div>
 <li v-for="item in services">
   {{ capitalizeFirstLetter(item) }}
 </li>
+
+<div v-if="failedToLoad">
+  <div>Failed to load services from CDN/Github. </div>
+  <a href="https://github.com/coollabsio/coolify/tree/main/templates/compose" target="_blank">Check out the list of services on Github</a>
+</div>
