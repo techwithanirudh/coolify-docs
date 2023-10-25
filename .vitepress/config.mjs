@@ -59,6 +59,7 @@ const config = {
           {
             text: "Services",
             items: [
+              { text: "One-click Services", link: "/one-click-services" },
               { text: "How To Add A Service", link: "/how-to-add-a-service" },
             ],
           },
