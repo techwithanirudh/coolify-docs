@@ -53,9 +53,9 @@ One-click services are a collection of services that can be deployed with a sing
   onMounted(async () => {
     let res = null
     try {
-      res = await fetch('https://cdn.coollabs.io/coolify/service-templates.json?from=docs')
+      res = await fetch('https://cdn.coollabs.io/coolify/service-templates.json?from=docs',{cache: "no-cache"})
     } catch(error) {
-      res = await fetch('https://raw.githubusercontent.com/coollabsio/coolify/main/templates/service-templates.json')
+      res = await fetch('https://raw.githubusercontent.com/coollabsio/coolify/main/templates/service-templates.json',{cache: "no-cache"})
   }
     if (res.ok === false) {
       failedToLoad.value = true
