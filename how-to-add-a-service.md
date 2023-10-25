@@ -189,11 +189,27 @@ services:
         # J0QT0Cqr2ArmIT4RgTwK5F5lcXShgnJ53XTiHjqBbPntWVVG8DRHKnrsIjXBZJ8e 
         - APPWRITE_PASSWORD=$SERVICE_PASSWORD_64_APPWRITE
 ```
+
+## Metadata
+
+You need to add extra metadata to the top of the `docker-compose` file, like:
+- documentation link
+- a slogan
+- additional tags (for better searching)
+
+Example:
+```
+# documentation: https://docs.n8n.io/hosting/
+# slogan: n8n is an extendable workflow automation tool which enables you to connect anything to everything via its open, fair-code model.
+# tags: n8n,workflow,automation,open,source,low,code
+
+... rest of the compose file ...
+
+```
 ## Add a new service
 Official templates stored [here](https://github.com/coollabsio/coolify/blob/main/templates/compose). They are just normal docker-compose files with a bit of magic.
 
 To add a new service, your can easily test your templates with `Docker Compose` deployments inside Coolify. It uses the same process to parse, generate and deploy as the one-click services.
-
 
 If you are done with tests and everything works, open a [PR](https://github.com/coollabsio/coolify/compare), that have the new `<service>.yaml` compose file under `/templates/compose`.
 
