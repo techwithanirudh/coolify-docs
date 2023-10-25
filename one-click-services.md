@@ -43,7 +43,7 @@ head:
 
 # One-click Services
 
-Here is the currently supported list of services:
+One-click services are a collection of services that can be deployed with a single click. You can find the list of services below.
 
 <script setup>
   import { onMounted, ref } from 'vue'
@@ -53,7 +53,7 @@ Here is the currently supported list of services:
   onMounted(async () => {
     let res = null
     try {
-      res = await fetch('https://cdn.coollabs.io/coolify/service-templates.json')
+      res = await fetch('https://cdn.coollabs.io/coolify/service-templates.json?from=docs')
     } catch(error) {
       res = await fetch('https://raw.githubusercontent.com/coollabsio/coolify/main/templates/service-templates.json')
     }
@@ -63,7 +63,7 @@ Here is the currently supported list of services:
       return
     }
     const data = await res.json()
-    services.value = Object.keys(data)
+    services.value = data
     loading.value = false
   })
   function capitalizeFirstLetter(string) {
@@ -71,9 +71,12 @@ Here is the currently supported list of services:
   }
 </script>
 <div v-if="loading">Loading services...</div>
-<li v-for="item in services">
-  {{ capitalizeFirstLetter(item) }}
-</li>
+
+<ul v-else>
+  <li v-for="(item,key) in services">
+  <a :href="item.documentation">{{ capitalizeFirstLetter(key) }}</a>
+  </li>
+</ul>
 
 <div v-if="failedToLoad">
   <div>Failed to load services from CDN/Github. </div>
