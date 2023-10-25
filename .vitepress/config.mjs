@@ -6,7 +6,14 @@ const config = {
   lang: "en-US",
   base: "/docs/",
   cleanUrls: true,
-  head: [],
+  head: [
+    [
+      "script",
+      {
+        src: "https://cdn.tailwindcss.com",
+      },
+    ],
+  ],
   themeConfig: {
     outline: "deep",
     search: {

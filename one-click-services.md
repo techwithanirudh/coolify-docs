@@ -56,7 +56,7 @@ One-click services are a collection of services that can be deployed with a sing
       res = await fetch('https://cdn.coollabs.io/coolify/service-templates.json?from=docs')
     } catch(error) {
       res = await fetch('https://raw.githubusercontent.com/coollabsio/coolify/main/templates/service-templates.json')
-    }
+  }
     if (res.ok === false) {
       failedToLoad.value = true
       loading.value = false
@@ -71,12 +71,13 @@ One-click services are a collection of services that can be deployed with a sing
   }
 </script>
 <div v-if="loading">Loading services...</div>
-
-<ul v-else>
-  <li v-for="(item,key) in services">
-  <a :href="item.documentation">{{ capitalizeFirstLetter(key) }}</a>
-  </li>
-</ul>
+  <div v-for="(item,key) in services" class="grid grid-cols-2 my-4 rounded p-2">
+  <div >
+   <div class="text-xl font-bold" >{{ capitalizeFirstLetter(key) }}</div>
+   <a class="text-xs" :href="item.documentation">{{ item.documentation }}</a>
+   </div>
+   <div class="text-xs w-full">{{ item.slogan }}</div>
+  </div>
 
 <div v-if="failedToLoad">
   <div>Failed to load services from CDN/Github. </div>
