@@ -54,10 +54,9 @@ Here is the currently supported list of services:
     let res = null
     try {
       res = await fetch('https://cdn.coollabs.io/coolify/service-templates.json')
-    } catch(error) {}
-    try {
+    } catch(error) {
       res = await fetch('https://raw.githubusercontent.com/coollabsio/coolify/main/templates/service-templates.json')
-    } catch(error) {}
+    }
     if (res.ok === false) {
       failedToLoad.value = true
       loading.value = false
