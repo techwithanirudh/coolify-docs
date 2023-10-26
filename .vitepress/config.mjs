@@ -42,6 +42,7 @@ const config = {
         text: "Get Started",
         items: [
           { text: "Installation", link: "/installation" },
+          { text: "Update", link: "/update" },
           {
             text: "Building Blocks",
             link: "/building-blocks",
