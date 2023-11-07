@@ -51,10 +51,13 @@ const config = {
             text: "No Vendor Lock-in",
             link: "/no-vendor-lock-in",
           },
-
           {
             text: "Password Reset",
             link: "/password-reset",
+          }, 
+          {
+            text: "FAQ",
+            link: "/faq",
           },
         ],
       },
