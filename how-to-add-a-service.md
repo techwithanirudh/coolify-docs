@@ -143,6 +143,19 @@ services:
         # http://api-vgsco4o.example.com/api will be proxied to port 2000
         - APPWRITE_API_URL=$SERVICE_FQDN_API_2000
 ```
+---
+### URL
+
+This will [generate](/servers.md#wildcard-domain) an URL based on the FQDN you have defined.
+
+
+```yaml
+services:
+    appwrite:
+      environment:
+        # appwrite-vgsco4o.example.com
+        - SERVICE_URL_APPWRITE 
+```
 
 --- 
 
