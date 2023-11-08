@@ -41,7 +41,7 @@ head:
       content: https://cdn.coollabs.io/assets/coolify/og-image-docs.png
 ---
 
-# Svelte Kit
+# SvelteKit
 
 Svelte Kit is a framework for building web applications of all sizes, with a beautiful development experience and flexible filesystem-based routing.
 
