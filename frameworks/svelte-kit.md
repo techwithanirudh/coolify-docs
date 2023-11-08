@@ -2,10 +2,10 @@
 head:
   - - meta
     - name: description
-      content: Coolify Documentation
+      content: Coolify Documentation for SvelteKit deployment
   - - meta
     - name: keywords
-      content: coolify self-hosting docker kubernetes vercel netlify heroku render digitalocean aws gcp azure
+      content: coolify self-hosting svelte sveltekit docker kubernetes vercel netlify heroku render digitalocean aws gcp azure
   - - meta
     - name: twitter:card
       content: summary_large_image
@@ -14,13 +14,13 @@ head:
       content: "@coolifyio"
   - - meta
     - name: twitter:title
-      content: Coolify Documentation
+      content: Coolify Documentation for SvelteKit deployment
   - - meta
     - name: twitter:description
       content: Self-hosting with superpowers.
   - - meta
     - name: twitter:image
-      content: https://cdn.coollabs.io/assets/coolify/og-image-docs.png
+      content: https://cdn.coollabs.io/assets/coolify/sveltekit-og-image.jpg
   - - meta
     - property: og:type
       content: website
@@ -38,7 +38,7 @@ head:
       content: Coolify
   - - meta
     - property: og:image
-      content: https://cdn.coollabs.io/assets/coolify/og-image-docs.png
+      content: https://cdn.coollabs.io/assets/coolify/sveltekit-og-image.jpg
 ---
 
 # SvelteKit
