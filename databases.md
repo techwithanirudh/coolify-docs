@@ -11,7 +11,7 @@ head:
       content: summary_large_image
   - - meta
     - name: twitter:site
-      content: '@coolifyio'
+      content: "@coolifyio"
   - - meta
     - name: twitter:title
       content: Coolify Documentation
@@ -40,6 +40,26 @@ head:
     - property: og:image
       content: https://cdn.coollabs.io/assets/coolify/og-image-docs.png
 ---
+
 # Databases
 
-⚠️ This page is still WIP.
+You can configure a database with a simple click. Coolify supports the following databases:
+
+- PostgreSQL
+- MySQL
+- MariaDB
+- MongoDB
+- Redis
+
+## Ports Mapping vs Public Port
+
+### Ports Mapping
+Ports mapping is using the Docker [port mapping](https://docs.docker.com/network/#published-ports) feature. It is used to map the container port to the host port. For example, if you set the port mapping to `8080:80`, the container port `80` will be mapped to the host port `8080`.
+
+### Public Port
+Public port is used to expose the container port to the internet, by starting an Nginx TCP proxy.
+
+
+### Which one should I use?
+- Port mappings makes the connection/port permanent (you need to restart your database to change it).
+- The public port makes the connection/port dynamic (you can change it without restarting the database, Coolify will restart the Nginx TCP proxy for you).
