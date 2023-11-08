@@ -46,4 +46,4 @@ head:
 Coolify configuration for different frameworks.
 
 - [Laravel](/frameworks/laravel)
-- [SvelteKit](/frameworks/sveltekit)
+- [SvelteKit](/frameworks/svelte-kit)
