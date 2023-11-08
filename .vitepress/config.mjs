@@ -63,6 +63,7 @@ const config = {
       },
       {
         text: "Frameworks",
+        link: "/frameworks/index",
         items: [
           { text: "SvelteKit", link: "/frameworks/svelte-kit" },
           { text: "Laravel", link: "/frameworks/laravel" },
