@@ -62,6 +62,12 @@ const config = {
         ],
       },
       {
+        text: "Frameworks",
+        items: [
+          { text: "SvelteKit", link: "/frameworks/svelte-kit" },
+        ]
+      },
+      {
         text: "Deep Dive",
         items: [
           { text: "Servers", link: "/servers" },
