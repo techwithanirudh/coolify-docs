@@ -20,7 +20,7 @@ head:
       content: Self-hosting with superpowers.
   - - meta
     - name: twitter:image
-      content: https://cdn.coollabs.io/assets/coolify/laravel-og-image.jpg
+      content: https://coolcdn.b-cdn.net/assets/coolify/laravel-og-image.jpg
   - - meta
     - property: og:type
       content: website
@@ -38,21 +38,20 @@ head:
       content: Coolify
   - - meta
     - property: og:image
-      content: https://cdn.coollabs.io/assets/coolify/laravel-og-image.jpg
+      content: https://coolcdn.b-cdn.net/assets/coolify/laravel-og-image.jpg
 ---
 
 # Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling.
 
-You need to set the port to 80:
+Example repository [here](https://github.com/coollabsio/coolify-examples/tree/laravel).
 
-<a target="_blank" href="https://coolcdn.b-cdn.net/assets/coolify/framework-configurations/laravel-1.jpg">
-<img src="https://coolcdn.b-cdn.net/assets/coolify/framework-configurations/laravel-1.jpg" alt="Laravel port configuration"/>
-</a>
+## Requirements
 
-And if you use `Nixpacks`, set the following environment variable:
+1. Set `Ports Exposes` field to `80`.
+2. If you use `Nixpacks` buildpack, set the following environment variable:
 
-<a target="_blank" href="https://coolcdn.b-cdn.net/assets/coolify/framework-configurations/laravel-2.jpg">
-<img src="https://coolcdn.b-cdn.net/assets/coolify/framework-configurations/laravel-2.jpg" alt="Laravel environment configuration for Nixpacks"/>
-</a>
+```
+NIXPACKS_PHP_ROOT_DIR=/app/public
+```

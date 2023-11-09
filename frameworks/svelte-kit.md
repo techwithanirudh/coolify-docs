@@ -20,7 +20,7 @@ head:
       content: Self-hosting with superpowers.
   - - meta
     - name: twitter:image
-      content: https://cdn.coollabs.io/assets/coolify/sveltekit-og-image.jpg
+      content: https://coolcdn.b-cdn.net/assets/coolify/sveltekit-og-image.jpg
   - - meta
     - property: og:type
       content: website
@@ -38,24 +38,24 @@ head:
       content: Coolify
   - - meta
     - property: og:image
-      content: https://cdn.coollabs.io/assets/coolify/sveltekit-og-image.jpg
+      content: https://coolcdn.b-cdn.net/assets/coolify/sveltekit-og-image.jpg
 ---
 
 # SvelteKit
 
 Svelte Kit is a framework for building web applications of all sizes, with a beautiful development experience and flexible filesystem-based routing.
 
+Example repository [here](https://github.com/coollabsio/coolify-examples/tree/sveltekit).
+
 ## Static build (`adapter-static`)
 
 You need to use `@sveltejs/adapter-static` ([docs](https://kit.svelte.dev/docs/adapter-static)) adapter to build a static site.
 
-<a target="_blank" href="https://coolcdn.b-cdn.net/assets/coolify/framework-configurations/sveltekit-static.jpg">
-<img src="https://coolcdn.b-cdn.net/assets/coolify/framework-configurations/sveltekit-static.jpg" alt="SvelteKit static build"/>
-</a>
+1. Set your site to static `on` (under `Build Pack` section).
+2. Set your `Publish Directory` to `/build`
 
 ## Node server (`adapter-node`)
 You need to use `@sveltejs/adapter-node` ([docs](https://kit.svelte.dev/docs/adapter-node)) adapter to build a node server based SvelteKit app.
 
-<a target="_blank" href="https://coolcdn.b-cdn.net/assets/coolify/framework-configurations/sveltekit.jpg">
-<img src="https://coolcdn.b-cdn.net/assets/coolify/framework-configurations/sveltekit.jpg" alt="SvelteKit node build"/>
-</a>
+1. Set your site to static to `off` (under `Build Pack` section).
+2. Set your `Start Command` to `node build`.
