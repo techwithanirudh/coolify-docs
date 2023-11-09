@@ -47,3 +47,4 @@ Coolify configuration for different frameworks.
 
 - [Laravel](/frameworks/laravel)
 - [SvelteKit](/frameworks/svelte-kit)
+- [Django](/frameworks/django)
