@@ -90,6 +90,7 @@ Currently supported S3 compatible storages are:
   - AWS
   - DigitalOcean Spaces
   - MinIO
+  - Cloudflare's R2
 
 Other's could work, but not tested yet.
 
