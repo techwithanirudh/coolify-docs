@@ -131,5 +131,5 @@ The following command will delete EVERYTING related to your configurations, back
 And delete all configurations in `/data/coolify`:
 
 ```bash
-rm -f /data/coolify
+rm -fr /data/coolify
 ```
