@@ -67,19 +67,39 @@ Coolify creates a full backup of your PostgreSQL databases. You can specify whic
 Coolify own database is also backed up using this method.
 :::
 
-### Backup
-Coolify uses the following command:
-
+### Backup command
 ```bash
-pg_dump --format=custom --no-acl --no-owner --username <username> <databaseName> > /data/coolify/backups/databases/<teamName-teamId>/<databaseUuid>/pg-dump-<databaseName>-<timestamp>.dmp
-# Example: /data/coolify/backups/databases/root-team-0/mcgkc4o/pg-dump-postgres-1697207547.dmp
+pg_dump --format=custom --no-acl --no-owner --username <username> <databaseName>
 ```
-### Restore
+### Restore command
 
-As you can see, it a custom format backup, so you can restore it using the following command (or any equivalent tool):
+The backup has custom format, so you can restore it using the following command (or with any equivalent tool):
 
 ```bash
 pg_restore --verbose --clean -h localhost -U postgres -d postgres pg-dump-postgres-1697207547.dmp
+```
+## MySQL
+
+```bash
+mysqldump -u root -p <password> <datatabaseName>
+```
+
+## MariaDB
+
+```bash
+mariadb-dump -u root -p <password> <datatabaseName>
+```
+
+## MongoDB
+
+```bash
+mongodump --authenticationDatabase=admin --uri=<uri> --gzip --archive=<archive>
+```
+
+Or if you exclude some collections:
+
+```bash
+mongodump --authenticationDatabase=admin --uri=<uri> --gzip --archive=<archive> --excludeCollection=<collectionName> --excludeCollection=<collectionName>
 ```
 
 ## S3 Backups
@@ -91,8 +111,9 @@ Currently supported S3 compatible storages are:
   - DigitalOcean Spaces
   - MinIO
   - Cloudflare's R2
+  - Backblaze B2
 
-Other's could work, but not tested yet.
+Other's could work, but not tested yet. If you test it, please let us know.
 
 ### S3 Client
 
