@@ -89,7 +89,6 @@ const config = {
               { text: "How To Add A Service", link: "/how-to-add-a-service" },
             ],
           },
-          { text: "Docker Credentials", link: "/docker-credentials" },
           { text: "Domains", link: "/domains" },
           { text: "Environment Variables", link: "/environment-variables" },
           { text: "Persistent Storage", link: "/persistent-storage" },
@@ -103,6 +102,8 @@ const config = {
             link: "/firewall",
           },
           { text: "Helper Commands", link: "/commands" },
+          { text: "Docker Credentials", link: "/docker-credentials" },
+          { text: "GitHub Actions", link: "/github-actions" },
         ],
       },
       {
