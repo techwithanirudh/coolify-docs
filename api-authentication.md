@@ -53,7 +53,7 @@ Define a name for your token and click `Create New Token`.
 
 You will see the token once, so make sure to copy it and store it in a safe place.
 
-## Scope
+### Scope
 
 Tokens are scoped for your currently active Team. If you switch to another team, you will see the tokens for that team.
 
