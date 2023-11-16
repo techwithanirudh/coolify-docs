@@ -93,6 +93,8 @@ const config = {
           { text: "Environment Variables", link: "/environment-variables" },
           { text: "Persistent Storage", link: "/persistent-storage" },
           { text: "Backups", link: "/backups" },
+          { text: "S3 Storages", link: "/s3-storages" },
+
           {
             text: "Notifications",
             link: "/notifications",
