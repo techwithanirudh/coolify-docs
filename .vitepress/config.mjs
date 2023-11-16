@@ -54,7 +54,7 @@ const config = {
           {
             text: "Password Reset",
             link: "/password-reset",
-          }, 
+          },
           {
             text: "FAQ",
             link: "/faq",
@@ -66,20 +66,26 @@ const config = {
         link: "/frameworks/index",
         items: [
           { text: "SvelteKit", link: "/frameworks/svelte-kit" },
-          { text: "Laravel", link: "/frameworks/laravel" },  
+          { text: "Laravel", link: "/frameworks/laravel" },
           { text: "Django", link: "/frameworks/django" },
         ]
       },
       {
         text: "Deep Dive",
         items: [
-          { text: "Servers", link: "/servers" },
+          {
+            text: "Servers",
+            link: "/servers",
+            items: [
+              { text: "Automated Cleanup", link: "/automated-cleanup" }
+            ]
+          },
           { text: "Applications", link: "/applications" },
           { text: "Databases", link: "/databases" },
           {
             text: "Services",
+            link: "/one-click-services",
             items: [
-              { text: "One-click Services", link: "/one-click-services" },
               { text: "How To Add A Service", link: "/how-to-add-a-service" },
             ],
           },
