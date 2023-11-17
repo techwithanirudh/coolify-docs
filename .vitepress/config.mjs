@@ -62,6 +62,13 @@ const config = {
         ],
       },
       {
+        text: "Use Cases",
+        link: "/usecases",
+        items: [
+          { text: "GitHub Actions", link: "/usecases/github-actions" },
+        ]
+      },
+      {
         text: "Frameworks",
         link: "/frameworks/index",
         items: [
@@ -94,7 +101,7 @@ const config = {
           { text: "Persistent Storage", link: "/persistent-storage" },
           { text: "Backups", link: "/backups" },
           { text: "S3 Storages", link: "/s3-storages" },
-
+          { text: "Logging", link: "/drain-logs" },
           {
             text: "Notifications",
             link: "/notifications",
@@ -105,7 +112,6 @@ const config = {
           },
           { text: "Helper Commands", link: "/commands" },
           { text: "Docker Credentials", link: "/docker-credentials" },
-          { text: "GitHub Actions", link: "/github-actions" },
         ],
       },
       {
