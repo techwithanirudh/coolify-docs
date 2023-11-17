@@ -63,7 +63,7 @@ const config = {
       },
       {
         text: "Use Cases",
-        link: "/usecases",
+        // link: "/usecases",
         items: [
           { text: "GitHub Actions", link: "/usecases/github-actions" },
         ]
