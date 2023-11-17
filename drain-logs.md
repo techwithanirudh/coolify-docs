@@ -47,6 +47,9 @@ You can drain logs of your deployed services to a third-party applications like 
 
 We will support more services in the future, like Signoz, HyperDX, etc.
 
+## How to enable?
+Go to your `Server` where you want to enable the `Drain Logs` and click on the `Drain Logs` tab.
+
 ## Axiom
 
 You need to have a `Dataset` and an `API key` from Axiom. More information [here](https://axiom.co/docs).
