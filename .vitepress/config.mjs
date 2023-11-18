@@ -8,6 +8,9 @@ const config = {
   cleanUrls: true,
   head: [
     [
+      "link", {
+        rel: "icon",
+        href: "/favicon.png" },
       "script",
       {
         src: "https://cdn.tailwindcss.com",
