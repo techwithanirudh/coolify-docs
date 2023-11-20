@@ -11,7 +11,7 @@ head:
       content: summary_large_image
   - - meta
     - name: twitter:site
-      content: '@coolifyio'
+      content: "@coolifyio"
   - - meta
     - name: twitter:title
       content: Coolify Documentation
@@ -40,12 +40,22 @@ head:
     - property: og:image
       content: https://cdn.coollabs.io/assets/coolify/og-image-docs.png
 ---
+
 # Docker Registries
 
 You can easily push your built docker images to any docker registries with Coolify.
 
 You just need to fill the `Docker Registry` fields in your service `General` configurations.
 
+## Configuration
+### Docker Image
+If this field is set, Coolify will automatically push your built docker image to the specified docker registry.
+> If the image is empty, Coolify won't push your built image.
+
+### Docker Image Tag
+If this field is set, Coolify will automatically push your built docker image with the specified tag to the specified docker registry + the git commit sha tag.
+
+> If the tag is empty, Coolify only push your built image with the git commit sha tag.
 
 ## Docker Credentials
 
@@ -57,7 +67,7 @@ If you want to authenticate Coolify with a Docker Registry:
 
 > Currently only `root` user is supported. Non-root users will be supported in the future.
 
-2. Login to the Docker Registry normally: execute `docker login` command. 
+2. Login to the Docker Registry normally: execute `docker login` command.
 
 > You will be prompted to enter your Docker registry username and password/token - this can be varied depending on the Docker registry you are using.
 
