@@ -5,7 +5,7 @@ head:
       content: Coolify Documentation
   - - meta
     - name: keywords
-      content: coolify self-hosting docker kubernetes vercel netlify heroku render digitalocean aws gcp azure
+      content: coolify self-hosting docker registry dockerhub ghcr.io kubernetes vercel netlify heroku render digitalocean aws gcp azure
   - - meta
     - name: twitter:card
       content: summary_large_image
