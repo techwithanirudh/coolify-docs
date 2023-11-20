@@ -40,15 +40,25 @@ head:
     - property: og:image
       content: https://cdn.coollabs.io/assets/coolify/og-image-docs.png
 ---
-# Docker Credentials
+# Docker Registries
 
-Docker credentials (from v4.0.0-beta.88) are used to authenticate with Docker registries to pull images for your resources. 
+You can easily push your built docker images to any docker registries with Coolify.
 
-## Login to Docker Registry
-If you want to use a private Docker registry, you need to login on the server with the same user that configured inside Coolify.
+You just need to fill the `Docker Registry` fields in your service `General` configurations.
+
+
+## Docker Credentials
+
+Docker credentials (from v4.0.0-beta.88) are used to authenticate with Docker registries to pull/push images.
+
+If you want to authenticate Coolify with a Docker Registry:
+
+1. Login on the server through SSH with the same user that configured for your server.
 
 > Currently only `root` user is supported. Non-root users will be supported in the future.
 
-Login to your server with `root` user and execute `docker login` command. You will be prompted to enter your Docker registry username and password/token.
+2. Login to the Docker Registry normally: execute `docker login` command. 
 
-Once you logged in, Coolify will automatically detect your credentials and use them to pull images from your private Docker registry - if needed.
+> You will be prompted to enter your Docker registry username and password/token - this can be varied depending on the Docker registry you are using.
+
+Once you logged in, Coolify will automatically detect your credentials and use them.

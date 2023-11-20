@@ -106,12 +106,12 @@ const config = {
             text: "Notifications",
             link: "/notifications",
           },
+          { text: "Docker Registries", link: "/docker-registries" },
           {
             text: "Firewall",
             link: "/firewall",
           },
           { text: "Helper Commands", link: "/commands" },
-          { text: "Docker Credentials", link: "/docker-credentials" },
         ],
       },
       {
