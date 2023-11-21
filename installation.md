@@ -42,7 +42,7 @@ head:
 ---
 # Installation
 
-Installation is automated with a single script.
+Installation of Coolify is automated with a single script.
 
 ```bash
 curl -fsSL https://cdn.coollabs.io/coolify/install.sh | bash
@@ -58,14 +58,6 @@ The script will do the followings on your operating system:
 - Creates an SSH key for Coolify to be able to manage this server from itself at `/data/coolify/ssh/keys/id.root@host.docker.internal`.
 - Install dockerized Coolify.
 
-## Supported Architectures
-
-`AMD64` and `ARM` architecture are supported.
-
-:::tip
-We recommend [Hetzner](https://hetzner.cloud/?ref=VBVO47VycYLt) **(referral link!)**. They have very cheap but super powerful servers, in EU and US.
-:::
-
 ## Supported Operating Systems
 
 `Debian` based servers are supported, due to the installation script (Coolify
@@ -73,7 +65,13 @@ itself supports every OS that could run a Docker Engine).
 
 If you would like to have other, please consider [open an issue on GitHub](https://github.com/coollabsio/coolify/issues/new).
 
-## Required CPU/Memory/Disk
+`AMD64` and `ARM` architecture are supported.
+
+:::tip
+We recommend [Hetzner](https://hetzner.cloud/?ref=VBVO47VycYLt) **(referral link!)**. They have very cheap but super powerful servers, in EU and US.
+:::
+
+### Required CPU/Memory/Disk
 
 Minimum required resources for Coolify:
 
@@ -107,7 +105,7 @@ Hosting the following things:
 - 2 PostgreSQL databases
 ```
 
-## Uninstall
+### Uninstall
 
 You can easily uninstall Coolify by stopping the following containers,
 `coolify`,`coolify-db`, `coolify-proxy`, and `coolify-redis` or by executing the following script:

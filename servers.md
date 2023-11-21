@@ -64,21 +64,29 @@ We recommend [Hetzner](https://hetzner.cloud/?ref=VBVO47VycYLt) **(referral link
 
 ### Requirements
 
-1. Connectivity
-   - SSH connectivity between Coolify and the server with SSH key authentication.
+:::warning
+⚠️ The only manual step you need to do is to place your SSH key on the server, into `root` user's `~/.ssh/authorized_keys` file.
+:::
+
+- Connectivity
+  1. SSH connectivity between Coolify and the server with SSH key authentication.
    :::info
    Your public key should be added to **root** user's `~/.ssh/authorized_keys`.
 
    If you do not have an SSH Key, you can generate on through Coolify with a simple button or you can generate one manually.
    :::
-   - Root user access.
+  2. Root user access.
    :::info
    We are working on to use non-root user.
    :::
-2. Docker Engine (24+)
-   - Automatically installed from the UI, but you can install manually.
+- Docker Engine (24+)
+  1. Automatically installed from the UI, but you can install manually.
 
-The only manual step you need to do is to place your SSH key on the server, into `root` user's `~/.ssh/authorized_keys` file.
+> Only Debian and Redhat based servers are supported at the moment for automated Docker Engine installation.
+
+#### Install Docker Engine manually
+You can install Docker Engine manually on your server. Find all instructions [here](https://docs.docker.com/engine/install/#server).
+
 
 ### Cloudflare Tunnels
 You can also set to use Cloudflare Tunnels for your servers.
