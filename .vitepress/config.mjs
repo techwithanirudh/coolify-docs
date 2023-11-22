@@ -111,7 +111,7 @@ const config = {
             text: "Firewall",
             link: "/firewall",
           },
-          { text: "Helper Commands", link: "/commands" },
+          { text: "Commands", link: "/commands" },
         ],
       },
       {

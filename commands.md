@@ -44,14 +44,20 @@ head:
 
 There are several commands to execute from terminal to manage Coolify.
 
-## Reset Root Password
+## Reset Root User's Password
 
 ```bash
-docker exec -ti coolify bash -c "php artisan users:reset-root"
+docker exec -ti coolify bash -c "php artisan root:reset-password"
 ```
 
-## Delete Resource
+## Reset Root User's Email
 
 ```bash
-docker exec -ti coolify bash -c "php artisan resources:delete"
+docker exec -ti coolify bash -c "php artisan root:change-email"
+```
+
+## Delete Service
+
+```bash
+docker exec -ti coolify bash -c "php artisan services:delete"
 ```
