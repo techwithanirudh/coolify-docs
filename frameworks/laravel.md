@@ -54,4 +54,5 @@ Example repository [here](https://github.com/coollabsio/coolify-examples/tree/la
 
 ```
 NIXPACKS_PHP_ROOT_DIR=/app/public
+NIXPACKS_PHP_FALLBACK_PATH=/index.php
 ```
