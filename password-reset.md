@@ -47,5 +47,5 @@ From `v4.0.0-beta.58`, you can use the following method to reset the root user's
 Login to your server through SSH and execute the following command:
 
 ```bash
-docker exec -ti coolify bash -c "php artisan users:reset-root"
+docker exec -ti coolify bash -c "php artisan root:reset-password"
 ```
