@@ -60,12 +60,14 @@ The script will do the followings on your operating system:
 
 ## Supported Operating Systems
 
-`Debian` based servers are supported, due to the installation script (Coolify
-itself supports every OS that could run a Docker Engine). 
+- Debian based Linux distributions (Debian, Ubuntu, etc.)
+- Redhat based Linux distributions (CentOS, Fedora, etc.)
+- SUSE based Linux distributions (SUSE, openSUSE, etc.)
+- Raspberry Pi OS (Raspbian)
 
 If you would like to have other, please consider [open an issue on GitHub](https://github.com/coollabsio/coolify/issues/new).
 
-`AMD64` and `ARM` architecture are supported.
+> `AMD64` and `ARM` architecture are supported.
 
 :::tip
 We recommend [Hetzner](https://hetzner.cloud/?ref=VBVO47VycYLt) **(referral link!)**. They have very cheap but super powerful servers, in EU and US.
