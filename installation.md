@@ -61,8 +61,8 @@ The script will do the followings on your operating system:
 ## Supported Operating Systems
 
 - Debian based Linux distributions (Debian, Ubuntu, etc.)
-- Redhat based Linux distributions (CentOS, Fedora, etc.)
-- SUSE based Linux distributions (SUSE, openSUSE, etc.)
+- Redhat based Linux distributions (CentOS, Fedora, Redhat, AlmaLinux, Rocky etc.)
+- SUSE based Linux distributions (SLES, SUSE, openSUSE, etc.)
 - Raspberry Pi OS (Raspbian)
 
 If you would like to have other, please consider [open an issue on GitHub](https://github.com/coollabsio/coolify/issues/new).
