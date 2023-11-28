@@ -48,6 +48,7 @@ Currently supported S3 compatible storages are:
   - MinIO
   - Cloudflare's R2
   - Backblaze B2
+  - Scaleway Object Storage
 
 Other's could work, but not tested yet. If you test it, please let us know.
 
