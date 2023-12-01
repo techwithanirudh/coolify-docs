@@ -11,7 +11,7 @@ head:
       content: summary_large_image
   - - meta
     - name: twitter:site
-      content: '@coolifyio'
+      content: "@coolifyio"
   - - meta
     - name: twitter:title
       content: Coolify Documentation
@@ -40,6 +40,7 @@ head:
     - property: og:image
       content: https://cdn.coollabs.io/assets/coolify/og-image-docs.png
 ---
+
 # Persistent Storage
 
 You could add persistent storage to your resources, so you can preserve your data between deployments.
@@ -56,6 +57,10 @@ To create a volume, you need to define:
 
 - `Name` of the volume.
 - `Destination Path` where the volume will be mounted inside the container.
+  
+:::warning
+The base directory inside the container is `/app`. So if you need to store your files under `storage` directory, you need to define `/app/storage` as the destination path.
+:::
 
 :::tip
 To prevent storage overlapping between resources, Coolify automatically adds the resource's UUID to the volume name.
@@ -66,13 +71,15 @@ To prevent storage overlapping between resources, Coolify automatically adds the
 To create a bind mount, you need to define:
 
 - `Name` of the volume, which will be used as a reference.
-- `Source Path` from the host system.
+- `Source Path` from the host system. **No docker volume created in this case.**
 - `Destination Path` where the volume will be mounted inside the container.
 
-No docker volume created in this case.
+:::warning
+The base directory inside the container is `/app`. So if you need to store your files under `storage` directory, you need to define `/app/storage` as the destination path.
+:::
 
 ::: danger
-Share file between more than one container?  **NOT RECOMMENDED.**
+Share file between more than one container? **NOT RECOMMENDED.**
 
 If you mount the same file to more than one container, you will need to make sure that the proper file locking mechanism is implemented in your resources.
 :::
