@@ -44,7 +44,7 @@ head:
 
 If you are using any kind of firewall, you need to allow the following ports:
 
-- For Coolify: `8000` and `22` (or any other SSH port you defined) (required)
+- For Coolify: `8000` (http), `6001` (websocket) and `22` (or a custom port) (required)
 - Reverse Proxy: `80, 443` (optional)
 
 :::warning 

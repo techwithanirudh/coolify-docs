@@ -40,11 +40,11 @@ head:
     - property: og:image
       content: https://cdn.coollabs.io/assets/coolify/og-image-docs.png
 ---
-# Update
+# Upgrade
 
-By default Coolify update itself automatically. You can turn it off in the `Settings` menu.
+By default Coolify upgrade itself automatically. You can turn it off in the `Settings` menu.
 
-## Manually Update
+## Manually Upgrade
 
 ```bash
 curl -fsSL https://cdn.coollabs.io/coolify/install.sh | bash
@@ -53,5 +53,5 @@ curl -fsSL https://cdn.coollabs.io/coolify/install.sh | bash
 Or if you prefer to use a specific version:
 
 ```bash
-curl -fsSL https://cdn.coollabs.io/coolify/install.sh | bash -s 4.0.0-beta.104
+curl -fsSL https://cdn.coollabs.io/coolify/install.sh | bash -s 4.0.0-beta.154
 ```

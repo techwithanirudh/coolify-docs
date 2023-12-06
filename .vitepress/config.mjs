@@ -42,7 +42,8 @@ const config = {
         text: "Get Started",
         items: [
           { text: "Installation", link: "/installation" },
-          { text: "Update", link: "/update" },
+          { text: "Cloudflare Tunnels", link: "/cloudflare-tunnels" },
+          { text: "Upgrade", link: "/upgrade" },
           {
             text: "Building Blocks",
             link: "/building-blocks",
