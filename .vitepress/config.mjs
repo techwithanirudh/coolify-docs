@@ -42,6 +42,10 @@ const config = {
         text: "Get Started",
         items: [
           { text: "Installation", link: "/installation" },
+          {
+            text: "Firewall",
+            link: "/firewall",
+          },
           { text: "Cloudflare Tunnels", link: "/cloudflare-tunnels" },
           { text: "Upgrade", link: "/upgrade" },
           {
@@ -108,10 +112,6 @@ const config = {
             link: "/notifications",
           },
           { text: "Docker Registries", link: "/docker-registries" },
-          {
-            text: "Firewall",
-            link: "/firewall",
-          },
           { text: "Commands", link: "/commands" },
         ],
       },
