@@ -56,3 +56,8 @@ If you are using `Oracle Cloud free ARM server`, you need to allow these ports i
 ## Coolify Cloud
 If you need the public facing IPs to allow inbound connections to your servers, please [contact us](/contact.md).
 
+
+### Where are our server located?
+
+All of our servers are located in Germany.
+

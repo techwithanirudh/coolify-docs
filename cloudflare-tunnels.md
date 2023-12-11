@@ -87,6 +87,7 @@ This tells Coolify how to connect to it's realtime server through Cloudflare Tun
 curl -fsSL https://cdn.coollabs.io/coolify/install.sh | bash
 ```
 
+> If you have a firewall, you also need to allow the [following ports](./firewall.md).
 ## Verify
 
 1. Navigate to your Coolify instance, as in the example: `https://app.coolify.io`.
