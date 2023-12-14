@@ -10,7 +10,8 @@ const config = {
     [
       "link", {
         rel: "icon",
-        href: "/favicon.png" },
+        href: "/favicon.png"
+      },
       "script",
       {
         src: "https://cdn.tailwindcss.com",
@@ -45,12 +46,13 @@ const config = {
         text: "Get Started",
         items: [
           { text: "Installation", link: "/installation" },
+          { text: "Configuration", link: "/configuration" },
+          { text: "Upgrade", link: "/upgrade" },
+          { text: "Cloudflare Tunnels", link: "/cloudflare-tunnels" },
           {
             text: "Firewall",
             link: "/firewall",
           },
-          { text: "Cloudflare Tunnels", link: "/cloudflare-tunnels" },
-          { text: "Upgrade", link: "/upgrade" },
           {
             text: "Building Blocks",
             link: "/building-blocks",

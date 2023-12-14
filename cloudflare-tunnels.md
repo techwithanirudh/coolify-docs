@@ -47,13 +47,33 @@ You can run Coolify behind Cloudflare Tunnels. You can run Coolify on your local
 
 > For more details about CF Tunnels, please visit [this page](https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/).
 
-## Configuration
+## Instance Configuration
 
 After you completed CF Tunnels setup on your server, you can continue with the following steps.
 
-1. Coolify listens on port `8000` by default.
-2. From beta.154, a [Soketi](https://docs.soketi.app/) server is also started on port `6001`.
+- Coolify listens on port `8000` by default.
+- From beta.154, a [Soketi](https://docs.soketi.app/) server is also started on port `6001`.
 
+
+You have two options.
+1. Set a wildcard domain for your tunnels.
+2. Set a domain for each tunnel.
+
+### Wildcard domain
+
+You need to add a wildcard domain to yourr Tunnels settings, like `*.coolify.io`, pointing to the local ip address of your server (could be local ip or public ip, depending on your setup), on `http`. Port should be empty or 80.
+
+This will allow to forward all requests to the Coolify proxy running.
+
+1. Get your Tunnel ID from the Tunnels page, example: `8cad65a8-7fbb-45f2-86a3-6ccc2de0dfac`.
+2. Add a `CNAME` DNS entry for `*.coolify.io` pointing to your Tunnel ID, example: `8cad65a8-7fbb-45f2-86a3-6ccc2de0dfac.cfargotunnel.com`.
+3. Set SSL/TLS settings to `Full` (at least).
+
+Now you need to use http for your Coolify instance AND for all your resources deployed by Coolify. The `Full` SSL configuration takes care of the encryption (https) between the client and Cloudflare.
+
+So for example, you can set your instance url to `http://app.coolify.io`. 
+
+### Domain for each tunnel
 You need to map these two ports to your domains.
 
 Let's say you have:
@@ -81,7 +101,7 @@ PUSHER_PORT=443
 
 This tells Coolify how to connect to it's realtime server through Cloudflare Tunnels.
 
-3. Restart Coolify with the installation script.
+Restart Coolify with the installation script.
 
 ```bash
 curl -fsSL https://cdn.coollabs.io/coolify/install.sh | bash
