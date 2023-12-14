@@ -22,7 +22,7 @@ const config = {
     search: {
       provider: "local",
     },
-    logo: "/coolify-transparent.png",
+    logo: "/favicon.png",
     nav: [
       {
         text: "Other Products",
