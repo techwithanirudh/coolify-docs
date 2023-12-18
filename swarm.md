@@ -76,7 +76,7 @@ systemctl start docker
 systemctl enable docker
 ```
 
-Hetnzer specific configuration, for MTU modifications.
+Hetzner specific configuration, for MTU modifications.
 On the `manager node`, run the following command to configure Docker.
 
 ```bash 
