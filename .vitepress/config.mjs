@@ -79,6 +79,12 @@ const config = {
         ]
       },
       {
+        text: "Guides",
+        items: [
+          { text: "Docker Swarm Cluster", link: "/swarm" },
+        ],
+      },
+      {
         text: "Frameworks",
         link: "/frameworks/index",
         items: [
