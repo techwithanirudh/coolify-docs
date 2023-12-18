@@ -42,6 +42,10 @@ head:
 ---
 # Configuration
 
+## Instance Domain
+
+You can set your Coolify instance a custom domain in the `/settings` page.
+
 ## Custom Proxy
 If you are using a custom proxy (like Nginx / Caddy), you need to set the following manually for your Coolify instance.
 
