@@ -76,8 +76,10 @@ systemctl start docker
 systemctl enable docker
 ```
 
-Hetzner specific configuration, for MTU modifications.
-On the `manager node`, run the following command to configure Docker.
+:::warning WARNING: Hetzner specific configuration
+Hetnzer servers use a MTU of 1450. You need to configure Docker to use the same MTU.
+
+On the `manager`, run the following command to configure Docker.
 
 ```bash 
 mkdir -p /etc/docker
@@ -92,7 +94,7 @@ cat <<EOF > /etc/docker/daemon.json
 EOF
 systemctl restart docker
 ```
-
+:::
 ### Create a Swarm cluster
 `On the manager node`, run the following command to create a new cluster.
 
@@ -139,6 +141,7 @@ A: Coolify will do cleanups and other stuff on the `swarm-workers`.
 ## Deploy with persistent storage
 To be able to deploy a service with persistent storage, you need to have a shared volume on the `swarm-workers`. So the Swarm service could move the resources between the `swarm-workers`.
 
-You can always use services like AWS EFS, NFS, GlusterFS, etc. But I will use [GlusterFS](https://github.com/gluster/glusterfs) for this guide.
+You can always use services like AWS EFS, NFS, GlusterFS, etc. 
 
-WIP
+:::danger WIP
+:::
