@@ -72,3 +72,7 @@ If you want to authenticate Coolify with a Docker Registry:
 > You will be prompted to enter your Docker registry username and password/token - this can be varied depending on the Docker registry you are using.
 
 Once you logged in, Coolify will automatically detect your credentials and use them.
+
+## Swarm Mode
+If you are deploying to a Swarm cluster, you need to make sure that your Docker Registry is accessible from all nodes in the cluster, workers and managers.
+
