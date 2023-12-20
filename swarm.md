@@ -44,12 +44,17 @@ head:
 # Swarm
 
 ## Setup in Coolify
-You need to add each server to Coolify. Coolify will communicate with the `swarm-manager` and deploy the services on the `swarm-workers`.
+If you would like to use a Swarm to deploy your resources, you need to add the `Swarm Manager` to Coolify. 
 
-> You need to setup the ssh keys on all servers.
+Optionally, you can add the `Swarm Workers` to Coolify. This will allow Coolify to do cleanups and other stuff on the `Swarm Workers`.
 
-Q: Why do you need to add the `swarm-workers` to Coolify?
-A: Coolify will do cleanups and other stuff on the `swarm-workers`.
+### Docker Registry
+You need to have an external Docker Registry available to use the a Swarm, as all workers need to be able to pull the images you built with Coolify.
+
+- The Swarm Manager needs to push the image to the Docker Registry.
+- The Swarm Workers need to pull the image from the Docker Registry.
+
+So set your docker login credentials accordingly. More information [here](./docker-registries.md).
 
 ## Install Swarm Cluster
 :::danger WIP
