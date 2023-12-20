@@ -50,10 +50,6 @@ const config = {
           { text: "Upgrade", link: "/upgrade" },
           { text: "Cloudflare Tunnels", link: "/cloudflare-tunnels" },
           {
-            text: "Firewall",
-            link: "/firewall",
-          },
-          {
             text: "Building Blocks",
             link: "/building-blocks",
           },
@@ -72,27 +68,22 @@ const config = {
         ],
       },
       {
-        text: "Use Cases",
-        // link: "/usecases",
-        items: [
-          { text: "GitHub Actions", link: "/usecases/github-actions" },
-        ]
-      },
-      {
         text: "Guides",
         items: [
+          { text: "GitHub Actions", link: "/usecases/github-actions" },
           { text: "Docker Swarm Cluster", link: "/swarm" },
+          {
+            text: "Frameworks",
+            link: "/frameworks/index",
+            items: [
+              { text: "SvelteKit", link: "/frameworks/svelte-kit" },
+              { text: "Laravel", link: "/frameworks/laravel" },
+              { text: "Django", link: "/frameworks/django" },
+            ]
+          },
         ],
       },
-      {
-        text: "Frameworks",
-        link: "/frameworks/index",
-        items: [
-          { text: "SvelteKit", link: "/frameworks/svelte-kit" },
-          { text: "Laravel", link: "/frameworks/laravel" },
-          { text: "Django", link: "/frameworks/django" },
-        ]
-      },
+    
       {
         text: "Deep Dive",
         items: [
@@ -117,11 +108,7 @@ const config = {
           { text: "Persistent Storage", link: "/persistent-storage" },
           { text: "Backups", link: "/backups" },
           { text: "S3 Storages", link: "/s3-storages" },
-          { text: "Logging", link: "/drain-logs" },
-          {
-            text: "Notifications",
-            link: "/notifications",
-          },
+          { text: "Drain Logs", link: "/drain-logs" },
           { text: "Docker Registries", link: "/docker-registries" },
           { text: "Commands", link: "/commands" },
         ],

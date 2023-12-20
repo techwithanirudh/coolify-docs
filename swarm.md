@@ -43,9 +43,19 @@ head:
 
 # Swarm
 
-This is just a brief guide to install a simple Docker Swarm cluster. For more information, please refer to the [official documentation](https://docs.docker.com/engine/swarm/).
+## Setup in Coolify
+You need to add each server to Coolify. Coolify will communicate with the `swarm-manager` and deploy the services on the `swarm-workers`.
+
+> You need to setup the ssh keys on all servers.
+
+Q: Why do you need to add the `swarm-workers` to Coolify?
+A: Coolify will do cleanups and other stuff on the `swarm-workers`.
 
 ## Install Swarm Cluster
+:::danger WIP
+:::
+This is just a brief guide to install a simple Docker Swarm cluster. For more information, please refer to the [official documentation](https://docs.docker.com/engine/swarm/).
+
 ### Prerequisites
 - I will use [Hetzner](https://hetzner.cloud/?ref=VBVO47VycYLt) **(referral link!)** for this guide. You can use any other provider.
 - You need at least 3 servers to create a Docker Swarm cluster with the same architecture (ARM or AMD64).
@@ -129,13 +139,7 @@ ua38ijktbid70em257ymxufif *   swarm-manager   Ready     Active         Leader   
 
 ```
 
-## Setup in Coolify
-You need to add each server to Coolify. Coolify will communicate with the `swarm-manager` and deploy the services on the `swarm-workers`.
 
-> You need to setup the ssh keys on all servers.
-
-Q: Why do you need to add the `swarm-workers` to Coolify?
-A: Coolify will do cleanups and other stuff on the `swarm-workers`.
 
 
 ## Deploy with persistent storage
