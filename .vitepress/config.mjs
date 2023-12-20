@@ -70,7 +70,7 @@ const config = {
       {
         text: "Guides",
         items: [
-          { text: "GitHub Actions", link: "/usecases/github-actions" },
+          { text: "GitHub Actions", link: "/github-actions" },
           { text: "Docker Swarm Cluster", link: "/swarm" },
           {
             text: "Frameworks",
