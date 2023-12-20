@@ -107,7 +107,7 @@ Restart Coolify with the installation script.
 curl -fsSL https://cdn.coollabs.io/coolify/install.sh | bash
 ```
 
-> If you have a firewall, you also need to allow the [following ports](./firewall.md).
+> If you have a firewall, you also need to allow the [following ports](./configuration.md#firewall).
 ## Verify
 
 1. Navigate to your Coolify instance, as in the example: `https://app.coolify.io`.
