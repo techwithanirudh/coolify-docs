@@ -2,10 +2,10 @@
 head:
   - - meta
     - name: description
-      content: Coolify - How to use Github Actions to deploy to Coolify
+      content: Coolify - Wildcard SSL Certificates
   - - meta
     - name: keywords
-      content: coolify self-hosting github github-actions docker kubernetes vercel netlify heroku render digitalocean aws gcp azure
+      content: coolify self-hosting github github-actions docker kubernetes vercel netlify heroku render digitalocean aws gcp azure wildcard ssl certificates
   - - meta
     - name: twitter:card
       content: summary_large_image
@@ -14,13 +14,13 @@ head:
       content: "@coolifyio"
   - - meta
     - name: twitter:title
-      content: Coolify - How to use Github Actions to deploy to Coolify
+      content: Coolify - Wildcard SSL Certificates
   - - meta
     - name: twitter:description
       content: Self-hosting with superpowers.
   - - meta
     - name: twitter:image
-      content: https://coolcdn.b-cdn.net/assets/coolify/github-actions-og-image.png
+      content: https://coolcdn.b-cdn.net/assets/coolify/wildcard-certificates-og-image.png
   - - meta
     - property: og:type
       content: website
@@ -38,7 +38,7 @@ head:
       content: Coolify
   - - meta
     - property: og:image
-      content: https://coolcdn.b-cdn.net/assets/coolify/github-actions-og-image.png
+      content: https://coolcdn.b-cdn.net/assets/coolify/wildcard-certificates-og-image.png
 ---
 
 # Wildcard SSL Certificates
