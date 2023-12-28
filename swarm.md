@@ -43,6 +43,8 @@ head:
 
 # Swarm
 
+Here is a brief guide on how to use Docker Swarm with Coolify.
+
 ## Setup in Coolify
 If you would like to use a Swarm to deploy your resources, you need to add the `Swarm Manager` to Coolify. 
 

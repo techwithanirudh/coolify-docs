@@ -72,6 +72,7 @@ const config = {
         items: [
           { text: "GitHub Actions", link: "/github-actions" },
           { text: "Docker Swarm Cluster", link: "/swarm" },
+          { text: "Wildcard SSL Certificates", link: "/wildcard-certificates" },
           {
             text: "Frameworks",
             link: "/frameworks/index",
