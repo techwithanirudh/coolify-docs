@@ -73,13 +73,14 @@ One-click services are a collection of services that can be deployed with a sing
 <div v-if="loading">Loading services...</div>
   <div v-for="(item,key) in services" class="grid grid-cols-2 my-4 rounded p-2">
   <div >
-   <div class="text-xl font-bold" >{{ capitalizeFirstLetter(key) }}</div>
-   <a class="text-xs" :href="item.documentation">
-     Docs</a>
+    <a :href="item.documentation">
+   <div style="font-size: 2rem; font-weight: bold;" >
+      {{ capitalizeFirstLetter(key) }}
+      </div>
+     </a>
    </div>
-   <div class="text-xs w-full">{{ item.slogan }}</div>
+   <div style="padding: 1rem 0 1rem 0">{{ item.slogan }}</div>
   </div>
-
 <div v-if="failedToLoad">
   <div>Failed to load services from CDN/Github. </div>
   <a href="https://github.com/coollabsio/coolify/tree/main/templates/compose" target="_blank">Check out the list of services on Github</a>
