@@ -48,18 +48,10 @@ This guide will help you to configure basic auth in Coolify & Traefik.
 All you need to do is to set custom labels on your application.
 
 ```bash {7-8}
-traefik.enable=true
-traefik.http.routers.q04o0gk-0-http.rule=Host(`o8ogs84.127.0.0.1.sslip.io`) && PathPrefix(`/`)
-traefik.http.routers.q04o0gk-0-http.entryPoints=http
-traefik.http.routers.q04o0gk-0-http.middlewares=gzip
-traefik.http.routers.q04o0gk-0-http.service=q04o0gk-0-http
-traefik.http.services.q04o0gk-0-http.loadbalancer.server.port=80
 traefik.http.middlewares.custom-auth.basicauth.users=test:$$2y$$12$$ci.4U63YX83CwkyUrjqxAucnmi2xXOIlEF6T/KdP9824f1Rf1iyNG
 traefik.http.routers.q04o0gk-0-http.middlewares=custom-auth
 ```
-
-The last two labels are the most important ones. 
-- `q04o0gk-0-http` is the name of the service. You can change it to whatever you want, but you need to use the same for all labels where you see `q04o0gk-0-http`.
+In the example above, we are using `test` as username and `test` as password.
 - `custom-auth` is the name of the middleware. You can change it to whatever you want. 
 
 
