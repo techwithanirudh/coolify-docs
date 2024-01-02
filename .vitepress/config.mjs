@@ -73,6 +73,7 @@ const config = {
           { text: "GitHub Actions", link: "/github-actions" },
           { text: "Docker Swarm Cluster", link: "/swarm" },
           { text: "Wildcard SSL Certificates", link: "/wildcard-certificates" },
+          { text: "Basic Auth with Traefik", link: "/basic-auth-with-traefik" },
           {
             text: "Frameworks",
             link: "/frameworks/index",
@@ -111,6 +112,7 @@ const config = {
           { text: "S3 Storages", link: "/s3-storages" },
           { text: "Drain Logs", link: "/drain-logs" },
           { text: "Docker Registries", link: "/docker-registries" },
+          { text: "Docker Compose", link: "/docker-compose" },
           { text: "Commands", link: "/commands" },
         ],
       },
