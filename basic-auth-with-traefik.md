@@ -59,6 +59,7 @@ traefik.http.routers.q04o0gk-0-http.middlewares=custom-auth
 ```
 
 The last two labels are the most important ones. 
+- `q04o0gk-0-http` is the name of the service. You can change it to whatever you want, but you need to use the same for all labels where you see `q04o0gk-0-http`.
 - `custom-auth` is the name of the middleware. You can change it to whatever you want. 
 
 
