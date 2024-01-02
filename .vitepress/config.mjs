@@ -87,7 +87,7 @@ const config = {
             text: "Services",
             link: "/services/index",
             items: [
-              { text: "Plausible Analytics", link: "/serices/plausible-analytics" },
+              { text: "Plausible Analytics", link: "/services/plausible-analytics" },
             ]
           },
         ],
