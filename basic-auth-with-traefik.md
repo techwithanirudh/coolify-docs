@@ -63,7 +63,7 @@ The last two labels are the most important ones.
 
 
 ## How to generate user/password?
-You need to set your username and password in the `users` label. You can generate your password with [htpasswd](https://www.web2generators.com/apache-tools/htpasswd-generator) or [htpasswd](https://httpd.apache.org/docs/current/programs/htpasswd.html) command.
+You need to set your username and password in the `users` label. You can generate your password with [Online htpasswd generator](https://www.web2generators.com/apache-tools/htpasswd-generator) or [htpasswd](https://httpd.apache.org/docs/current/programs/htpasswd.html) command.
 
 ```bash
 htpasswd -nbB test test
