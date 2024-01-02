@@ -83,6 +83,13 @@ const config = {
               { text: "Django", link: "/frameworks/django" },
             ]
           },
+          {
+            text: "Services",
+            link: "/services/index",
+            items: [
+              { text: "Plausible Analytics", link: "/serices/plausible-analytics" },
+            ]
+          },
         ],
       },
     
