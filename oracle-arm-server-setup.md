@@ -20,7 +20,7 @@ head:
       content: Self-hosting with superpowers.
   - - meta
     - name: twitter:image
-      content: https://coolcdn.b-cdn.net/assets/coolify/basic-auth-with-traefik-og-image.png
+      content: https://cdn.coollabs.io/assets/coolify/og-image-docs.png
   - - meta
     - property: og:type
       content: website
@@ -38,7 +38,7 @@ head:
       content: Coolify
   - - meta
     - property: og:image
-      content: https://coolcdn.b-cdn.net/assets/coolify/basic-auth-with-traefik-og-image.png
+      content: https://cdn.coollabs.io/assets/coolify/og-image-docs.png
 ---
 
 # Oracle ARM Server Setup
