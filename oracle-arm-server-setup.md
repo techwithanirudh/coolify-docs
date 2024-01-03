@@ -20,7 +20,7 @@ head:
       content: Self-hosting with superpowers.
   - - meta
     - name: twitter:image
-      content: https://cdn.coollabs.io/assets/coolify/og-image-docs.png
+      content: https://coolcdn.b-cdn.net/assets/coolify/oracle-arm-og-image.png
   - - meta
     - property: og:type
       content: website
@@ -38,7 +38,7 @@ head:
       content: Coolify
   - - meta
     - property: og:image
-      content: https://cdn.coollabs.io/assets/coolify/og-image-docs.png
+      content: https://coolcdn.b-cdn.net/assets/coolify/oracle-arm-og-image.png
 ---
 
 # Oracle ARM Server Setup
