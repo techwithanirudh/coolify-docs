@@ -74,6 +74,7 @@ const config = {
           { text: "Docker Swarm Cluster", link: "/swarm" },
           { text: "Wildcard SSL Certificates", link: "/wildcard-certificates" },
           { text: "Basic Auth with Traefik", link: "/basic-auth-with-traefik" },
+          { text: "Oracle ARM Server Setup", link: "/oracle-arm-server-setup" },
           {
             text: "Frameworks",
             link: "/frameworks/index",
