@@ -2,7 +2,7 @@
 head:
   - - meta
     - name: description
-      content: Coolify - Wildcard SSL Certificates
+      content: Coolify - Wildcard SSL Certificates with Traefik
   - - meta
     - name: keywords
       content: coolify self-hosting github github-actions docker kubernetes vercel netlify heroku render digitalocean aws gcp azure wildcard ssl certificates
@@ -14,7 +14,7 @@ head:
       content: "@coolifyio"
   - - meta
     - name: twitter:title
-      content: Coolify - Wildcard SSL Certificates
+      content: Coolify - Wildcard SSL Certificates with Traefik
   - - meta
     - name: twitter:description
       content: Self-hosting with superpowers.
@@ -41,7 +41,7 @@ head:
       content: https://coolcdn.b-cdn.net/assets/coolify/wildcard-certificates-og-image.png
 ---
 
-# Wildcard SSL Certificates
+# Wildcard SSL Certificates with Traefik
 
 This guide will help you to configure wildcard subdomain redirects (with Traefik wildcard certificates) in Coolify.
 

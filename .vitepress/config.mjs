@@ -72,9 +72,22 @@ const config = {
         items: [
           { text: "GitHub Actions", link: "/github-actions" },
           { text: "Docker Swarm Cluster", link: "/swarm" },
-          { text: "Wildcard SSL Certificates", link: "/wildcard-certificates" },
-          { text: "Basic Auth with Traefik", link: "/basic-auth-with-traefik" },
-          { text: "Oracle ARM Server Setup", link: "/oracle-arm-server-setup" },
+          {
+            text: "Server Providers",
+            link: "/server-providers/index",
+            items: [
+              { text: "Oracle ARM Server Setup", link: "/server-providers/oracle-arm-server-setup" },
+            ]
+          },
+          {
+            text: "Traefik",
+            link: "/traefik/index",
+            items: [
+              { text: "Basic Auth", link: "/traefik/basic-auth" },
+              { text: "Wildcard SSL Certificates", link: "/traefik/wildcard-certificates" },
+              { text: "Redirects", link: "/traefik/redirects" },
+            ]
+          },
           {
             text: "Frameworks",
             link: "/frameworks/index",
