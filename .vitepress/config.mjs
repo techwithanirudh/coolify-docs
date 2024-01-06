@@ -70,8 +70,16 @@ const config = {
       {
         text: "Guides",
         items: [
-          { text: "GitHub Actions", link: "/github-actions" },
           { text: "Docker Swarm Cluster", link: "/swarm" },
+          {
+            text: "Git Providers",
+            link: "/git-providers/index",
+            items: [
+              { text: "GitHub Actions", link: "/git-providers/github-actions" },
+              { text: "GitLab Integrations", link: "/git-providers/gitlab-integration" },
+
+            ]
+          },
           {
             text: "Server Providers",
             link: "/server-providers/index",
