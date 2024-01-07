@@ -17,7 +17,7 @@ head:
       content: Coolify Documentation
   - - meta
     - name: twitter:description
-      content: Self-hosting with superpowers.
+      content: Revolutionize self-hosting with Coolify.
   - - meta
     - name: twitter:image
       content: https://cdn.coollabs.io/assets/coolify/og-image-docs.png
@@ -32,7 +32,7 @@ head:
       content: Coolify
   - - meta
     - property: og:description
-      content: Self-hosting with superpowers.
+      content: Empowering self-hosting with Coolify.
   - - meta
     - property: og:site_name
       content: Coolify
@@ -41,76 +41,70 @@ head:
       content: https://cdn.coollabs.io/assets/coolify/og-image-docs.png
 ---
 
-# Cloudflare Tunnels
+# Utilizing Cloudflare Tunnels with Coolify
 
-You can run Coolify behind Cloudflare Tunnels. You can run Coolify on your local machine (like old laptop/raspberry pi) and expose it to the internet without opening any ports on your router.
+Coolify can be seamlessly integrated with Cloudflare Tunnels. This setup allows you to host Coolify on local hardware (e.g., an old laptop or Raspberry Pi) and make it accessible online without needing to open router ports.
 
-> For more details about CF Tunnels, please visit [this page](https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/).
+> For comprehensive information on Cloudflare Tunnels, visit [Cloudflare's Documentation](https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/).
 
-## Instance Configuration
+## Setting Up Your Instance
 
-After you completed CF Tunnels setup on your server, you can continue with the following steps.
+Once Cloudflare Tunnels are installed on your server, follow these steps:
 
-- Coolify listens on port `8000` by default.
-- From beta.154, a [Soketi](https://docs.soketi.app/) server is also started on port `6001`.
+**Key Points:**
+- Coolify defaults to port `8000`.
+- Starting from beta.154, Coolify also launches a [Soketi](https://docs.soketi.app/) server on port `6001`.
 
+There are two main approaches for configuring your tunnels:
+1. Use a wildcard domain for all tunnels.
+2. Assign a specific domain to each tunnel.
 
-You have two options.
-1. Set a wildcard domain for your tunnels.
-2. Set a domain for each tunnel.
+### Wildcard Domain Configuration
 
-### Wildcard domain
+To set up a wildcard domain:
+1. Add a wildcard domain (e.g., `*.example.com`) in your Tunnels settings, pointing to your server's local or public IP address over `http`. Leave the port field blank or set it to 80.
+2. Obtain your Tunnel ID, e.g., `8cad65a8-7fbb-45f2-86a3-6ccc2de0dfac`.
+3. Create a `CNAME` DNS record for `*.example.com` pointing to your Tunnel ID, like `8cad65a8-7fbb-45f2-86a3-6ccc2de0dfac.cfargotunnel.com`.
+4. Set your SSL/TLS settings to at least `Full`.
 
-You need to add a wildcard domain to yourr Tunnels settings, like `*.coolify.io`, pointing to the local ip address of your server (could be local ip or public ip, depending on your setup), on `http`. Port should be empty or 80.
+This setup forwards all requests to the Coolify proxy. Use HTTP for your Coolify instance and all deployed resources. The `Full` SSL configuration will ensure encryption (HTTPS) between the client and Cloudflare.
 
-This will allow to forward all requests to the Coolify proxy running.
+### Specific Domain Configuration  
 
-1. Get your Tunnel ID from the Tunnels page, example: `8cad65a8-7fbb-45f2-86a3-6ccc2de0dfac`.
-2. Add a `CNAME` DNS entry for `*.coolify.io` pointing to your Tunnel ID, example: `8cad65a8-7fbb-45f2-86a3-6ccc2de0dfac.cfargotunnel.com`.
-3. Set SSL/TLS settings to `Full` (at least).
+For individual domains:
+- Map `app.coolify.io` to port `8000`.
+- Map `realtime.coolify.io` to port `6001`.
+- Link each deployed resource's domain to the respective Cloudflare tunnel.
 
-Now you need to use http for your Coolify instance AND for all your resources deployed by Coolify. The `Full` SSL configuration takes care of the encryption (https) between the client and Cloudflare.
+### Configuring the Realtime Server
 
-So for example, you can set your instance url to `http://app.coolify.io`. 
-
-### Domain for each tunnel
-You need to map these two ports to your domains.
-
-Let's say you have:
-- `app.coolify.io` mapped to `8000`
-- `realtime.coolify.io` mapped to `6001`
-
-After you installed Coolify, you need to add 3 lines your `.env` file, located in `/data/coolify/source` folder.
+Post-setup, add these lines to your `.env` file in `/data/coolify/source`:
 
 ```bash
-APP_ID=<random string>
-APP_KEY=<random string>
-APP_NAME=Coolify
-DB_PASSWORD=<random string>
-PUSHER_APP_ID=<random string>
-PUSHER_APP_KEY=<random string>
-PUSHER_APP_SECRET=<random string>
-REDIS_PASSWORD=<random string>
-
 ###########
-# Add these lines
+# Additional Configuration
 PUSHER_HOST=realtime.coolify.io
 PUSHER_PORT=443
 ###########
 ```
 
-This tells Coolify how to connect to it's realtime server through Cloudflare Tunnels.
-
-Restart Coolify with the installation script.
+Restart Coolify using:
 
 ```bash
 curl -fsSL https://cdn.coollabs.io/coolify/install.sh | bash
 ```
 
-> If you have a firewall, you also need to allow the [following ports](./configuration.md#firewall).
-## Verify
+> Note: Adjust your firewall settings to allow the [required ports](./configuration.md#firewall).
 
-1. Navigate to your Coolify instance, as in the example: `https://app.coolify.io`.
-2. Login with the root user (the first user you created after installation).
-3. Open another tab/window and navigate to `https://app.coolify.io/api/v1/test/realtime`. On the other tab (opened in point 2), you should see a notification about the test event.
-4. If you know what are you doing, you can check the network tab as well. Search for a websocket connection.
+## Verification
+
+1. Access your Coolify instance, e.g., `https://app.coolify.io`.
+2. Log in as the root user.
+3. In a new tab, visit `https://app.coolify.io/api/v1/test/realtime`. You should see a notification in the first tab.
+4. For advanced users, inspect the network tab for websocket connections.
+
+## Next Steps
+
+After completing the setup:
+- Set your server's Wildcard Domain to `http://example.com`.
+- Configure your instance URL as `http://app.example.com`.
