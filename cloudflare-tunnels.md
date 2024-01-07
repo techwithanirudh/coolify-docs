@@ -56,8 +56,8 @@ Once Cloudflare Tunnels are installed on your server, follow these steps:
 - Starting from beta.154, Coolify also launches a [Soketi](https://docs.soketi.app/) server on port `6001`.
 
 There are two main approaches for configuring your tunnels:
-1. Use a wildcard domain for all tunnels.
-2. Assign a specific domain to each tunnel.
+1. Use a wildcard domain for resources.
+2. Assign a specific domain to each resource.
 
 ### Wildcard Domain Configuration
 
@@ -81,6 +81,15 @@ For individual domains:
 Post-setup, add these lines to your `.env` file in `/data/coolify/source`:
 
 ```bash
+APP_ID=<random string>
+APP_KEY=<random string>
+APP_NAME=Coolify
+DB_PASSWORD=<random string>
+PUSHER_APP_ID=<random string>
+PUSHER_APP_KEY=<random string>
+PUSHER_APP_SECRET=<random string>
+REDIS_PASSWORD=<random string>
+
 ###########
 # Additional Configuration
 PUSHER_HOST=realtime.coolify.io
